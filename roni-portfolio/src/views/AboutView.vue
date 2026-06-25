@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import backgroundImage from '@/assets/camp.jpg'
 import { ref } from 'vue'
 
