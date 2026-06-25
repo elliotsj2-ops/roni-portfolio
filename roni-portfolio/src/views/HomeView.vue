@@ -60,8 +60,8 @@ const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLScRzleZT_WzMKyh
                     <div class="flex-grow border-t border-black"></div>
                 </div>
                 
-                <div class="flex flex-row gap-8 py-8">
-                    <div v-for="(service, index) in services" :key="index" class="flex flex-col gap-4 w-1/3 p-8 bg-[rgb(220,220,230,0.6)] rounded-lg shadow-md">
+                <div class="flex flex-col md:flex-row gap-8 py-8">
+                    <div v-for="(service, index) in services" :key="index" class="flex flex-col gap-4 p-8 bg-[rgb(220,220,230,0.6)] rounded-lg shadow-md">
                         <h2 class="text-center font-italic text-xl font-bold text-gray-800">
                             {{ service.title }}
                         </h2>

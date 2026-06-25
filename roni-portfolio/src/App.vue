@@ -4,7 +4,7 @@ import { RouterView } from 'vue-router';
 
 <template>
   <nav class="flex flex-row items-center justify-between text-black text-base p-4 gap-4 bg-white/30 fixed top-0 left-0 w-full h-16 z-50 backdrop-blur-md">
-    <div class="font-montserrat flex-1 flex flex-row gap-8">
+    <div class="font-montserrat flex-1 flex flex-row gap-8 text-sm md:text-lg">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About Me</router-link>
     </div>
