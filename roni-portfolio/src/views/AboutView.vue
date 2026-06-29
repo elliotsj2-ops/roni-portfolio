@@ -14,6 +14,10 @@ const testimonials = ref([
     {
         author: "Amy Dean, Chair of Math & Science Department",
         content: "Roni’s guidance and resources were both amazing and action-oriented."
+    },
+    {
+        author: "Adi Alouf, Director of Jewish & Student Life, Jewish Studies Teacher",
+        content: "Roni, with her deep wisdom and warmth, leads and models restorative approaches to teaching, learning, and community that are nothing short of transformational. Through faculty workshops and ongoing learning cohorts, she helped educators at JCHS develop practical tools for cultivating classrooms and a school culture rooted in humanity, student empowerment, and belonging. Roni guides communities and institutions in thinking and developing the skills for what deep learning truly requires – not only rigorous instruction, but relationships that enable every student and educator to flourish. Her work has fundamentally shaped the culture of our school."
     }
 ]);
 </script>
