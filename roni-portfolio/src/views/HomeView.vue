@@ -34,11 +34,11 @@ const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLScRzleZT_WzMKyh
         <div class="relative z-10 flex flex-col items-center justify-center gap-8 font-montserrat pt-16 bg-[rgb(220,220,230,0.6)]">
             <div class="flex flex-row">
                 <div class="flex flex-col gap-4 w-2/3 p-8 items-start justify-center">
-                    <h1 class="text-5xl font-bold text-gray-800">Hi, I'm Roni Ben-David</h1>
-                    <p class="text-lg text-gray-700">
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-800">Hi, I'm Roni Ben-David</h1>
+                    <p class="text-base md:text-lg text-gray-700">
                         I founded Regenerative Teaching Consulting to support schools in authentically deepening their inclusion work, by building the skills and capacity of their teachers.
                     </p>
-                    <p class="text-lg text-gray-700">
+                    <p class="text-base md:text-lg text-gray-700">
                         My approach is to offer warm, practical guidance, grounded in restorative and trauma-based approaches to teaching. 
                     </p>
 
@@ -62,13 +62,13 @@ const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLScRzleZT_WzMKyh
                 
                 <div class="flex flex-col md:flex-row gap-8 py-8">
                     <div v-for="(service, index) in services" :key="index" class="flex flex-col gap-4 p-8 bg-[rgb(220,220,230,0.6)] rounded-lg shadow-md">
-                        <h2 class="text-center font-italic text-xl font-bold text-gray-800">
+                        <h2 class="text-center font-italic text-lg md:text-xl font-bold text-gray-800">
                             {{ service.title }}
                         </h2>
-                        <p class="text-lg text-gray-700">
+                        <p class="text-sm md:text-lg text-gray-700">
                             {{ service.description }}
                         </p>
-                        <ul class="list-disc list-inside text-lg text-gray-700">
+                        <ul class="list-disc list-inside text-sm md:text-lg text-gray-700">
                             <li v-for="(item, idx) in service.list" :key="idx">
                                 {{ item }}
                             </li>

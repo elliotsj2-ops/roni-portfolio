@@ -26,25 +26,28 @@ const testimonials = ref([
     <div class="relative bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: `url(${backgroundImage})` }">
         <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div class="relative z-10 flex flex-col items-center justify-center gap-8 font-montserrat pt-16 bg-[rgb(220,220,230,0.6)]">
-            <div class="w-full flex flex-row pt-32 px-12 justify-between items-center gap-8">
-                <div class="w-1/2 md:w-3/4 flex flex-col gap-4 justify-center">
-                    <h1 class="font-montserrat text-4xl text-left text-black">
+            <div class="md:hidden pt-8 px-8 flex justify-center">
+                <img src="@/assets/crop-photo.jpg" alt="Cover Photo" class="aspect-square object-cover rounded-full object-cover shadow-lg border-gray-2">
+            </div>
+            <div class="w-full flex flex-row sm:pt-4 px-8 md:pt-24 md:px-12 justify-between items-center gap-8">
+                <div class="w-full md:w-3/4 flex flex-col gap-4 justify-center">
+                    <h1 class="font-montserrat text-lg md:text-4xl text-left text-black">
                         I spent over a decade implementing Equity & Inclusion systems and trainings at independent schools, and here’s what I realized:
                     </h1>
-                    <h1 class="font-montserrat text-4xl text-left text-black italic font-semibold">
+                    <h1 class="font-montserrat text-lg md:text-4xl text-left text-black italic font-semibold">
                         The real culture shift happens one teacher at a time.
                     </h1>
                 </div>
-                <div class="w-1/2 md:w-1/4 justify-center">
+                <div class="hidden md:flex md:w-1/4 justify-center">
                     <img src="@/assets/crop-photo.jpg" alt="Cover Photo" class="aspect-square object-cover rounded-full object-cover shadow-lg border-gray-2">
                 </div>
             </div>
-            <div class="h-12"></div>
+            <div class="md:h-12"></div>
             <div class="bg-[rgb(250,250,250,0.3)] px-12 py-8 h-full">
-                <p class="font-montserrat text-lg">
+                <p class="font-montserrat text-base md:text-lg">
                     In order to create learning environments where young people feel a deep sense of belonging, we need to properly resource our teachers. I offer a framework that involves observing oneself (with gentleness!) and disrupting old patterns of thinking, responding and communicating; as well as incorporating tools that will increase student’s motivation, accountability, and potential for growth. 
                 </p>
-                <p class="font-montserrat text-lg pt-12">
+                <p class="font-montserrat text-base md:text-lg pt-12">
                     Since 2006, I have worked in Bay Area private schools as Director of Social Justice & Inclusion, Dean of Student Life, Service Learning Coordinator, and DEIB Consultant. I established a schoolwide Restorative Justice program, and practiced as a credentialed Restorative Justice Practitioner. Since 2024, I have facilitated year-long Restorative Teaching Cohorts for faculty. I believe the experience of teaching can be a profound catalyst for personal discovery and relational evolution – and I am passionate about supporting other educators on this journey!
                 </p>
                 <v-btn variant="outlined" rounded="xl" size="large" append-icon="mdi-email-arrow-right-outline" href="mailto:ronibendavid@gmail.com" target="_blank" color="#006622" class="!bg-[rgba(0,102,34,0.1)] mt-12">
@@ -62,10 +65,10 @@ const testimonials = ref([
 
                     <div class="flex flex-col md:flex-row gap-8 py-8">
                         <div v-for="(testimonial, index) in testimonials" :key="index" class="flex flex-col gap-4 md:w-full p-8 bg-[rgb(220,220,230,0.6)] rounded-lg shadow-md">
-                            <p class="text-xl text-gray-700 font-playfair">
+                            <p class="text-sm md:text-xl text-gray-700 font-playfair">
                                 "{{ testimonial.content }}"
                             </p>
-                            <h2 class="font-italic text-xl font-bold text-gray-800">
+                            <h2 class="font-italic text-lg md:text-xl font-bold text-gray-800">
                                 —&nbsp;&nbsp;{{ testimonial.author }}
                             </h2>
                         </div>
